@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* background-color: #d1dce8; */
+    /* background-color:#b54c0b; */
+    background-color:#963d0e;
+
+}
+.left-container .input_container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    textarea{
+        width: 80%;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 5px 5px 20px  rgb(243, 139, 139);
+        border: none;
+
+    }
+}
+.left-container .input_container .color{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    >div{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        font-weight: 600;
+        
+    }
+
+}
+.left-container .btn{
+    width: 90%;
+    
+}
+.left-container .btn button{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #fbb03b);  
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+}
+.left-container .btn button:hover{
+    background-position: 100% 0;
+}
+.main_container .right-container {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    gap: 5rem;
+    overflow-y:auto;
+    background-color:#b54c0b;
+
+
+    .right-container-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5rem;
+    }
+}
+.right-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#notes_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all 0.2s linear;
+}
+#notes_container>div{
+    min-width: 15rem;
+    min-height: 10rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: grab;
+    position: absolute;
+    button{
+        padding: 0.2rem 0.8rem;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+    }
+}
+
+.right-container .card{
+    min-width: 15rem;
+    min-height: 10rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: grab;
+    position: absolute;
+    button{
+        padding: 0.2rem 0.8rem;
+        border-radius: 5px;
+        border: none;
+        font-weight: 600;
+    }
+
+}
